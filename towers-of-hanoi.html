@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Towers of Hanoi</title>
+<style type="text/css">
+#status { font-weight: bold; }
+footer {
+  font-size: smaller;
+  color: #777;
+}
+footer a {
+  color: #777;
+  text-decoration: none;
+}
+</style>
+<script src="towers-of-hanoi.js"></script>
+</head>
+<body>
+<h1>Towers of Hanoi</h1>
+
+<p>The goal is to move all disks from the leftmost peg to the
+rightmost peg.<br>
+Disks are moved one at a time and only on to
+a <em>bigger</em> disk.</p>
+
+<p>Number of disks:
+<select id="num-disks">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3" selected>3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+</select>
+<input type="button" value="Start Over" id="reset">
+</p>
+
+<canvas id="towers-canvas" width="500" height="225"></canvas>
+
+<audio id="towers-audio" src="audio/swoosh.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<p>
+<span id="status"></span>
+Moves: <span id="moves">0</span><br>
+Time: <span id="time">00:00</span>
+</p>
+
+<hr>
+<footer>
+Tested only with Firefox 5 and Chrome 13+.<br>
+Sounds courtesy of <a href="http://soundbible.com/">SoundBible.com</a> and <a href="http://www.deusx.com/freesoundeffects.html">deusx.com</a>.
+</footer>
+
+</body>
+</html>
