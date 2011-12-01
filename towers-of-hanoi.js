@@ -40,7 +40,7 @@ var startTimeMillis;
 var intervalId;
 var context;
 
-var swooshSound = "audio/Swoosh 3-SoundBible.com-1573211927.mp3";
+var swooshSound = "audio/swoosh3.mp3";
 var applauseSound = "audio/applause2.mp3";
 var playAudio = false;
 
